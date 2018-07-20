@@ -4,6 +4,7 @@
   margin-right: auto;
 }
 
+button,
 .button,
 a.button {
   position: relative;
@@ -24,15 +25,21 @@ a.button {
 
   .dark-theme & {
     background: var(--dark-background-secondary);
+    color: inherit;
   }
 
   /* variants */
 
   &.outline {
     background: transparent;
-    border-color: rgba(0, 0, 0, .2);
+    border-color: var(--light-background-secondary);
     box-shadow: none;
     padding: 8px 18px;
+
+    .dark-theme & {
+      border-color: var(--dark-background-secondary);
+      color: inherit;
+    }
 
     :hover {
       transform: none;
@@ -78,5 +85,33 @@ a.read-more:active {
 
   .dark-theme & {
     background: none;
+  }
+}
+
+.code-toolbar {
+  margin-bottom: 20px;
+
+  .toolbar-item a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 8px;
+    margin-bottom: 5px;
+    background: var(--light-background-secondary);
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+
+    .dark-theme & {
+      background: var(--dark-background-secondary);
+      color: inherit;
+    }
   }
 }

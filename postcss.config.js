@@ -1,19 +1,22 @@
-const url = require('postcss-url')
-const imports = require('postcss-import')
-const nested = require('postcss-nested')
-const stripComments = require('postcss-strip-inline-comments')
-const postCSSPresetEnv = require('postcss-preset-env')
-const browsers = require('browserslist')
+const url = require("postcss-url");
+const imports = require("postcss-import");
+const nested = require("postcss-nested");
+const postCSSPresetEnv = require("postcss-preset-env");
+const browsers = require("browserslist");
+const cssnano = require("cssnano");
+const mixins = require("postcss-mixins");
 
 module.exports = () => ({
   plugins: [
-    stripComments,
     url,
     imports,
+    mixins,
     nested,
     postCSSPresetEnv({
       stage: 1,
-      browsers: 'last 2 versions',
-    })
-  ]
-})
+    }),
+    cssnano({
+      preset: "default",
+    }),
+  ],
+});
