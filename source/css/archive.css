@@ -1,84 +1,65 @@
 .archive {
   width: 100%;
-  max-width: 800px;
   text-align: left;
-  padding: 20px;
-  margin: 0 auto;
+  margin: auto;
 
-  &__group {
-    &-month {
-      display: flex;
-      align-items: flex-start;
-      padding: 10px 0;
+  &:not(:last-of-type) {
+    border-bottom: 1px solid var(--light-border-color);
 
-      @media (--phone) {
-        flex-direction: column;
-      }
-
-      &:not(:last-of-type) {
-        border-bottom: 1px solid var(--light-border-color);
-
-        .dark-theme & {
-          border-color: var(--dark-border-color);
-        }
-      }
-    }
-
-    &-year {
-      margin-top: 40px;
-
-      @media (--phone) {
-        margin-top: 20px;
-      }
-
-      &:not(:last-of-type) {
-        border-bottom: 1px solid var(--light-border-color);
-
-        .dark-theme & {
-          border-color: var(--dark-border-color);
-        }
-      }
-
-      &-header {
-        margin: 10px 0;
-      }
-    }
-
-    &-month {
-      &-header {
-        margin: 25px 0;
-        width: 200px;
-        opacity: .5;
-
-        @media (--phone) {
-          margin: 10px 0 0;
-        }
-      }
-    }
-
-    &-posts {
-      width: 100%;
+    .dark-theme & {
+      border-color: var(--dark-border-color);
     }
   }
 
-  &__post {
-    padding: 20px 0;
+  &-group {
+    display: flex;
+    margin-bottom: 1.9em;
+    line-height: normal;
 
-    &:not(:last-of-type) {
-      border-bottom: 1px solid var(--light-border-color);
+    @media (--phone) {
+      display: block;
+    }
+  }
 
-      .dark-theme & {
-        border-color: var(--dark-border-color);
+  &-list {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .post {
+    &-title {
+      font-size: 1rem;
+      margin: 5px 0 5px 0;
+    }
+
+    &-year {
+      padding-top: 6px;
+      margin-right: 1.8em;
+      font-size: 1.6em;
+      @include dimmed;
+
+      @media (--phone) {
+        margin: -6px 0 4px;
       }
     }
 
-    &-title {
-      margin: 5px 0;
-
+    &-item {
+      border-bottom: 1px grey dashed;
       a {
-        display: block;
+        color: #868992;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 12px 0;
         text-decoration: none;
       }
+    }
+
+    &-day {
+      flex-shrink: 0;
+      margin-left: 1em;
     }
   }
 }

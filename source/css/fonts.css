@@ -1,44 +1,15 @@
-@font-face {
-  font-family: 'Noto Sans TC';
-  font-style: normal;
-  font-weight: 400;
-  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-  src: url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional");
-}
-@font-face {
-  font-family: 'Noto Sans TC';
-  font-style: italic;
-  font-weight: 400;
-  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-  src: url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional");
-}
+@import url(
+    'https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional'
+);
 
-@font-face {
-  font-family: 'Noto Sans TC';
-  font-style: normal;
-  font-weight: 700;
-  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-  src: url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:700&display=swap&subset=chinese-traditional");
-}
-@font-face {
-  font-family: 'Noto Sans TC';
-  font-style: italic;
-  font-weight: 700;
-  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-  src: url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:700&display=swap&subset=chinese-traditional");
-}
+@import url(
+    'https://fonts.googleapis.com/css?family=Noto+Sans+TC:500&display=swap&subset=chinese-traditional'
+);
 
-@font-face {
-  font-family: 'Noto Sans TC';
-  font-style: normal;
-  font-weight: 900;
-  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-  src: url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:900&display=swap&subset=chinese-traditional");
-}
-@font-face {
-  font-family: 'Noto Sans TC';
-  font-style: italic;
-  font-weight: 900;
-  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-  src: url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:900&display=swap&subset=chinese-traditional");
-}
+@import url(
+    'https://fonts.googleapis.com/css?family=Noto+Sans+TC:700&display=swap&subset=chinese-traditional'
+);
+
+@import url(
+    'https://fonts.googleapis.com/css?family=Noto+Sans+TC:900&display=swap&subset=chinese-traditional'
+);
