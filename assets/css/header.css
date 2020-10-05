@@ -1,14 +1,10 @@
 .header {
-  background: var(--light-header);
+  background: var(--header);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   padding: 20px;
-
-  .dark-theme & {
-    background: var(--dark-header);
-  }
 
   &__right {
     display: flex;
@@ -24,16 +20,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: auto;
-
-    @media (--tablet) {
-      width: 60%;
-      min-width: 760px;
-    }
-
-    @media (--phone) {
-      width: 100%;
-    }
+    margin: 0 auto;
+    width: 760px;
+    max-width: 100%;
   }
 }
 

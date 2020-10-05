@@ -1,27 +1,31 @@
 :root {
   /* light theme color */
-  --light-background: #fefefe;
-  --light-background-secondary: #f4efe1;
-  --light-header: #fbfbfb;
-  --light-color: #333;
-  --light-color-secondary: #999;
-  --light-border-color: #eed1d1;
-
-  /* dark theme colors */
-  --dark-background: #333;
-  --dark-background-secondary: #464643;
-  --dark-header: #363636;
-  --dark-color: #fefefe;
-  --dark-color-secondary: #777;
-  --dark-border-color: #615252;
+  --background: #fefefe;
+  --background-secondary: #f4efe1;
+  --header: #fbfbfb;
+  --color: #333;
+  --color-code: #c7254e;
+  --color-secondary: #999;
+  --border-color: #eed1d1;
 
   /* variables for js, must be the same as these in @custom-media queries */
-  --phoneWidth: (max-width: 768px);
-  --tabletWidth: (max-width: 1080px);
+  --phoneWidth: (max-width: 684px);
+  --tabletWidth: (max-width: 900px);
 }
 
-@custom-media --phone (width < 768px);
-@custom-media --tablet (width > 768px);
+body.dark-theme {
+  /* dark theme colors */
+  --background: #333;
+  --background-secondary: #464643;
+  --header: #363636;
+  --color: #fefefe;
+  --color-code: #ec4c4c;
+  --color-secondary: #777;
+  --border-color: #615252;
+}
+
+@custom-media --phone (width < 684px);
+@custom-media --tablet (width < 900px);
 
 @define-mixin greater-icon $stroke-width: 3px, $width: .95rem, $height: 100% {
   .greater-icon {
