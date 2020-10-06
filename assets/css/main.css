@@ -133,11 +133,13 @@ code, kbd {
   border-radius: 5px;
   font-size: .9rem;
   font-weight: normal;
+  color: var(--color-code); /* jyny */
 
   code, kbd {
     background: transparent;
     padding: 0;
     margin: 0;
+    color: var(--color-code); /* jyny */
   }
 }
 
