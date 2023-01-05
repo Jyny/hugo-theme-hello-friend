@@ -1,3 +1,3 @@
-module github.com/panr/hugo-theme-hello-friend
+module github.com/jynychen/blog-theme
 
 go 1.19
